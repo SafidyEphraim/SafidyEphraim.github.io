@@ -191,6 +191,11 @@ span {
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+.services-container .services-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
 }
 
 .services-box i {
@@ -206,84 +211,3 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
-
-.list-unstyled {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .container {
-    min-height: 100vh;  
-    padding: 10rem 9% 2rem;  
-  }
-
-  ul {
-    padding-left: 2rem;
-  }
-  
-  li {
-    margin-bottom: 1rem;
-  }
-
-  .grid {
-    display: flex;
-    flex-wrap: wrap; 
-  }
-  
-  .grid__item {
-    flex-grow: 1;
-    flex-shrink: 0;
-    width: 100%; 
-    padding:1rem;
-  }
-
-  @media screen and (min-width:750px) {
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;    
-    }
-  
-    .grid__item {
-      max-width: 50%;
-    }
-  }
-
-  .skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    background: var(--second-bg-color);
-  }
-
-  .skills h4, .skills p {
-    margin:0 0 0.3rem 0;
-  }
-  
-  .skills li {
-    background-color: #448fb3;
-    border-left:3px solid rgb(2, 141, 255, 0.5);
-    padding:.9rem 2rem;
-  }
-  
-  .skills .progressbar {
-    background: #F5F5F5;
-    color: #FFF;
-    margin-bottom: 1rem;  
-  }
-  
-  .skills .bar {
-    background: #5b6c78;
-    padding: 1rem;
-  }
-
-  .section-header p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
-  }
-
-  .grid p {
-    font-size: 1.6rem;
-  }
